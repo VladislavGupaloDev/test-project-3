@@ -6,6 +6,7 @@ import tsconfigPaths from 'vite-tsconfig-paths'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/test-project-3/',
   plugins: [react(), tailwindcss(), tsconfigPaths()],
   resolve: {
     alias: {
@@ -14,6 +15,5 @@ export default defineConfig({
   },
   build: {
     outDir: './dist'
-  },
-  assetsInclude: ['**/*.png']
+  }
 })
